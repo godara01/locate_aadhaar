@@ -1,0 +1,26 @@
+<div class="example-container">
+  <mat-form-field>
+    <mat-select placeholder="State">
+      <mat-option *ngFor="let state of states" [value]="state.value">
+        {{state.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-select placeholder="District">
+      <mat-option *ngFor="let district of districts" [value]="district.value">
+        {{district.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-select placeholder="Sub District">
+      <mat-option value="option">Option</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-select placeholder="VTC (Village Town City)">
+      <mat-option value="option">Option</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>

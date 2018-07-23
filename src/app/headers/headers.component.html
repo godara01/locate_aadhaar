@@ -1,0 +1,43 @@
+<header>
+  <div id="logos" class="end-to-end">
+    <div id="uidai" class="end-to-end">
+    <img src="../../assets/images/Emblem_of_India.png" alt="Indian emblem" height="50" />
+    <div class="no-padding">
+    <p>Unique Identification Authority of India</p>
+    <p>Government of India</p>
+  </div>
+  </div>
+  <span class="fill-remaining-space"></span>
+
+  <img src="../../assets/images/aadhaar-logo.png" alt="aadhaar logo" height="50" />
+
+  </div>
+  <div id="toolbar">
+    <mat-toolbar color="primary">
+        <button mat-icon-button [matMenuTriggerFor]="menu" *ngIf="isMobile"><mat-icon>menu</mat-icon></button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>SSUP Home</button>
+            <button mat-menu-item>Instructions</button>
+            <button mat-menu-item>Update Status</button>
+            <button mat-menu-item>FAQ</button>
+            <button mat-menu-item>Contact Us</button>
+        </mat-menu>
+      <span>Enrolment Center Search</span>
+      <span class="fill-remaining-space"></span>
+
+
+      
+      <div class="equally-spaced" *ngIf="!isMobile">
+        <button mat-button>SSUP Home</button>
+        <button mat-button>Instructions</button>
+        <button mat-button>Update Status</button>
+        <button mat-button>FAQ</button>
+        <button mat-button>Contact Us</button>
+
+
+      </div>
+
+    </mat-toolbar>
+  </div>
+</header>
+
